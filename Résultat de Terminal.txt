@@ -1,0 +1,47 @@
+Last login: Mon Oct  2 17:45:06 on ttys026
+You have new mail.
+maximemasse@MBP-de-Maxime ~ % git commit --amend
+fatal: Not a git repository (or any of the parent directories): .git
+maximemasse@MBP-de-Maxime ~ % cd learning-test
+maximemasse@MBP-de-Maxime learning-test % cd 10.Boxy-project
+maximemasse@MBP-de-Maxime 10.Boxy-project % git init
+Reinitialized existing Git repository in /Users/maximemasse/learning-test/10.Boxy-project/.git/
+maximemasse@MBP-de-Maxime 10.Boxy-project % git commit -amend
+error: did you mean `--amend` (with two dashes ?)
+maximemasse@MBP-de-Maxime 10.Boxy-project % 
+maximemasse@MBP-de-Maxime 10.Boxy-project % git commit --amend
+
+
+
+
+
+
+
+
+
+
+
+test de la commande add + test commit 
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Date:      Mon Oct 2 17:08:51 2023 -0400
+#
+# On branch mise_en_place
+# Changes to be committed:
+#       new file:   Résultat de Terminal.txt
+#       modified:   src/App.jsx
+#       modified:   src/assets/Components/Header.jsx
+#
+~                                                                                                      
+~                                                                                                      
+~                                                                                                      
+~                                                                                                      
+~                                                                                                      
+~                                                                                                      
+~                                                                                                      
+~                                                                                                      
+~                                                                                                      
+~                                                                                                      
+
