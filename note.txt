@@ -1,1 +1,2 @@
---> fin de la mise en place du boxProperties √
+--> mise en place du store redux et des states √
+--> afficher les composante des propriété de la box 
