@@ -28,6 +28,8 @@ export default function LeftContainer() {
           );
         })}
       </div>
+{/* affichage des élément des composante boxPanel et ShadowList */}
+
     </div>
   );
 }
