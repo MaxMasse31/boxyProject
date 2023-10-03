@@ -1,0 +1,1 @@
+--> Mise en place du store redux et des states 
