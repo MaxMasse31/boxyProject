@@ -3,6 +3,8 @@ import Footer from "./Components/Footer";
 import LeftContainer from "./Layouts/LeftContainer";
 
 function App() {
+
+  console.log("allo");
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
