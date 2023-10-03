@@ -30,6 +30,11 @@ export default function LeftContainer() {
       </div>
 {/* affichage des élément des composante boxPanel et ShadowList */}
 
+<div className="flex-shrink-0 h-full max-h-[700px] overflow-auto">
+  
+  
+   </div>
+
     </div>
   );
 }
