@@ -63,4 +63,4 @@ export const shadowslice = createSlice({
 export const { updatesShadowValue, addShadow, updateCheckbox, removeShadow } =
   shadowslice.actions;
 
-  export default shadowslice.reducer
+export default shadowslice.reducer;
