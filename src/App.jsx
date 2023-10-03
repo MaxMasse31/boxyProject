@@ -1,4 +1,4 @@
-import Header from "./assets/Components/"
+import Header from "./assets/Components/Header"
 
 function App() {
   return (
@@ -6,7 +6,16 @@ function App() {
 
       <Header /> 
 
-      <main className="flex flex-wrap justify center items-center flex-grow bg-gray-100 px-10 "> </main>
+      <main className="flex flex-wrap justify center items-center flex-grow bg-gray-100 px-10 md:flex-nowrap "> 
+      
+      
+      {/* <Leftside />  */}
+      {/* <Visualisation />  */}
+
+      
+      </main>
+
+      {/* <Footer/> */}
 
     </div>
   );
