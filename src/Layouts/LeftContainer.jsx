@@ -32,7 +32,7 @@ export default function LeftContainer() {
 
 <div className="flex-shrink-0 h-full max-h-[700px] overflow-auto">
   
-  
+  {tabList[tab].component}
    </div>
 
     </div>
