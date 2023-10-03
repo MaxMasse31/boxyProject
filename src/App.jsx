@@ -1,5 +1,5 @@
-import Header from "./assets/Components/Header";
-import Footer from "./assets/Components/Footer";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
