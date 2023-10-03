@@ -13,5 +13,5 @@ export default function BoxPanel() {
     }
   });
 
-  return <div>{boxInputs}</div>;
+  return <div className="bg-gray-50 px-6 py-4 border-b border-gray-300"> <p className="font-bold text-lg my-2"> Box Properties</p>{boxInputs}</div>;
 }
