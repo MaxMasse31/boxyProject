@@ -14,7 +14,17 @@ export default function BoxRange({ inputData }) {
           />
           <p>px</p>
         </div>
+     
       </div>
+
+      <div className="relative z-0 w-full flex items-center">
+          <input type="range"
+          min={inputData.minMax[0]}
+          max={inputData.minMax[1]}
+          
+          
+          />
+        </div> 
     </div>
   );
 }
