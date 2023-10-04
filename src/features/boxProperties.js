@@ -32,19 +32,26 @@ const initialState = [
     name: "Background color",
     value: "#fff",
     type: "color",
-    minMax: [-250, 250],
     slice: "boxProperties",
   },
 ];
 
+// Création du slice Redux
 export const boxSlice = createSlice({
-  name: "boxProperties",
-  initialState,
+  name: "boxProperties", // Le nom du slice
+  initialState, // L'état initial
   reducers: {
-    updateBoxeValue: (state, action) => {},
+    // Action pour mettre à jour la valeur d'un élément du slice
+    updateBoxeValue: (state, action) => {
+      // Recherche de l'élément avec le même inputNumber et mise à jour de sa valeur
+      state.find((el) => el.inputNumber === action.payload.inputNumber).value =
+        action.payload.value;
+    },
   },
 });
 
+// Export des actions générées par createSlice
 export const { updateBoxeValue } = boxSlice.actions;
 
+// Export du réducteur du slice
 export default boxSlice.reducer;
