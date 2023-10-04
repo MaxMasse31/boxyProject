@@ -27,7 +27,7 @@ input[type="number"] {
 }
 
 input[type="range"]::-webkit-slider-thumb {
-  background-color: rgb(21, 66, 98); /* Change the cursor color to cyan */
+  background-color: rgb(37, 99, 235); /* Change the cursor color to cyan */
   border: none; /* Remove any border */
   width: 16px; /* Adjust width as needed */
   height: 16px; /* Adjust height as needed */
@@ -35,7 +35,7 @@ input[type="range"]::-webkit-slider-thumb {
   cursor: pointer; /* Change cursor on hover */
 }
 input[type="range"]::-moz-range-thumb {
-  background-color: rgb(21, 66, 98); /* Change the cursor color to cyan */
+  background-color: rgb(37, 99, 235); /* Change the cursor color to cyan */
   border: none; /* Remove any border */
   width: 16px; /* Adjust width as needed */
   height: 16px; /* Adjust height as needed */
