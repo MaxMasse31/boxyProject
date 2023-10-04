@@ -1,7 +1,9 @@
-import React from 'react'
+import React from "react";
 
 export default function ShadowPanel() {
   return (
-    <div>ShadowPanel</div>
-  )
+    <>
+      <li>Shadow</li>
+    </>
+  );
 }
