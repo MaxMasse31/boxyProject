@@ -4,18 +4,24 @@ import "./animation.css";
 import { useSpring, animated } from "react-spring";
 
 export default function ShadowPanel({ panelNumber, shadow }) {
-  const [toggleShadow, setToggleShadow] = useState(true);
+  const [toggleShadow, setToggleShadow] = useState(false);
   const rotateProps = useSpring({
     transform: toggleShadow ? "rotate(90deg)" : "rotate(0deg)",
   });
 
+  // const shadowInput = boxState.map((input, index) => {
+  //   if (input.type === "range") {
+  //     return <shadowRange key={index} inputData={input} />;
+  //   } else if (input.type === "color") {
+  //     return <BoxColorPicker key={index} inputData={input} />;
+  //   }
+  // });
+
   return (
     <>
-      <li
-        className= "bg-gray-50 border-b border-gray-300 animation">
-      
+      <li className="bg-gray-50 border-b border-gray-300 animation block">
         <button onClick={() => setToggleShadow(!toggleShadow)}>
-          <span>Shadow {panelNumber} </span>
+        <span className={toggleShadow ? "text-visible" : ""}>Shadow {panelNumber}</span>
           <animated.img
             style={rotateProps}
             className="font-bold w-5"
@@ -31,6 +37,8 @@ export default function ShadowPanel({ panelNumber, shadow }) {
                 Remove
               </button>
             </div>
+
+            {/* <div className="px-6 py-4"> {shadowInput}</div> */}
           </>
         )}
       </li>
