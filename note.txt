@@ -3,7 +3,8 @@
 --> Mettre en place les inputs range lié à la boite √
 --> Mettre en place les inputs color lié à la boite √
 --> Afficher la liste des ombres √
---> ajouter les inputs des ombres 
+--> ajouter les inputs des ombres √
+--> gérer les inputs range des ombres 
 
 
 
