@@ -3,6 +3,7 @@ import Chevron from "../../assets/chevron.svg";
 import "./animation.css";
 import ShadowColorPicker from "./ShadowColorPicker";
 import ShadowRange from "./ShadowRange";
+import ShadowCheckBox from "./ShadowCheckBox";
 
 export default function ShadowPanel({ panelNumber, shadow }) {
   // État local pour gérer l'état de l'ombre (ouverte ou fermée)
@@ -29,7 +30,13 @@ export default function ShadowPanel({ panelNumber, shadow }) {
         />
       );
     } else if (input.type === "color") {
-      return <ShadowColorPicker key={index} inputData={shadow.inputs[index]} shadowId={shadow.id}  />;
+      return (
+        <ShadowColorPicker
+          key={index}
+          inputData={shadow.inputs[index]}
+          shadowId={shadow.id}
+        />
+      );
     }
   });
 
@@ -53,7 +60,14 @@ export default function ShadowPanel({ panelNumber, shadow }) {
         {toggleShadow && (
           <>
             <div className="flex item-end px-6 py-4">
-              {/* Bouton pour supprimer l'ombre */}
+
+                <div> 
+
+              <ShadowCheckBox name="active" shadowId={shadow.id} />
+              <ShadowCheckBox name="inset" shadowId={shadow.id} />
+
+              </div>
+
               <button className="ml-auto text-sm bg-red-600 text-white hover:bg-red-700 py-1 px-3 rounded">
                 Remove
               </button>
