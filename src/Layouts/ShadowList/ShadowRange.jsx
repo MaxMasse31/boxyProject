@@ -17,8 +17,8 @@ export default function ShadowRange({ inputData, shadowId }) {
   }
 
   return (
-    <div className="my-8">
-      <div className="flex justify-between">
+    <div className="my-4">
+      <div className="flex justify-between items-baseline">
         {/* Destructuring */}
         <p>{inputData.name}</p>
 

@@ -117,7 +117,14 @@ export const shadowslice = createSlice({
     },
 
     // Action pour mettre à jour une case à cocher (à implémenter)
-    updateCheckbox: (state, action) => {},
+    updateCheckbox: (state, action) => {
+      const currentShadow = state.find(
+        (shadow) => shadow.id === action.payload.shadowId
+      );
+
+      currentShadow[action.payload.status] =
+        !currentShadow[action.payload.status];
+    },
   },
 });
 
