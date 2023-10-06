@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Chevron from "../../assets/chevron.svg";
 import "./animation.css";
-import { useSpring, animated } from "react-spring";
 import ShadowColorPicker from "./ShadowColorPicker";
 import ShadowRange from "./ShadowRange";
 
@@ -9,17 +8,15 @@ export default function ShadowPanel({ panelNumber, shadow }) {
   // État local pour gérer l'état de l'ombre (ouverte ou fermée)
   const [toggleShadow, setToggleShadow] = useState(false);
 
-  //Fait en sorte que la vignette reste fermé sauf pour la première lorsque charge la page
+  // Fait en sorte que la vignette reste fermée sauf pour la première lorsque charge la page
   useEffect(() => {
     if (panelNumber === 1) {
       setToggleShadow(true);
     }
   }, []);
 
-  // Configuration pour l'animation de rotation du chevron
-  const rotateProps = useSpring({
-    transform: toggleShadow ? "rotate(90deg)" : "rotate(0deg)",
-  });
+  // Style initial pour la rotation du chevron
+  const initialRotateStyle = toggleShadow ? "rotate(90deg)" : "rotate(0deg)";
 
   // Génère les éléments d'entrée d'ombre en fonction du type (range ou color)
   const shadowInput = shadow.inputs.map((input, index) => {
@@ -32,7 +29,7 @@ export default function ShadowPanel({ panelNumber, shadow }) {
         />
       );
     } else if (input.type === "color") {
-      return <ShadowColorPicker key={index} inputData={shadow.inputs[index]} />;
+      return <ShadowColorPicker key={index} inputData={shadow.inputs[index]} shadowId={shadow.id}  />;
     }
   });
 
@@ -45,9 +42,9 @@ export default function ShadowPanel({ panelNumber, shadow }) {
         >
           {/* Affiche le texte "Shadow {panelNumber}" */}
           Shadow {panelNumber}
-          {/* Image du chevron animée */}
-          <animated.img
-            style={rotateProps}
+          {/* Image du chevron avec style initial */}
+          <img
+            style={{ transform: initialRotateStyle }}
             className="font-bold w-5 ml-2 float-right "
             src={Chevron}
             alt="Chevron"
