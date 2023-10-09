@@ -7,6 +7,7 @@ const initialState = [
     id: nanoid(8), // Génère un identifiant unique
     active: true, // Indique si l'ombre est active
     inset: false, // Indique si l'ombre est en relief
+    finalString:"",
     inputs: [
       {
         inputNumber: 1,
@@ -125,6 +126,14 @@ export const shadowslice = createSlice({
       currentShadow[action.payload.status] =
         !currentShadow[action.payload.status];
     },
+
+
+
+    
+
+
+
+    
   },
 });
 
