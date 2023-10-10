@@ -1,0 +1,20 @@
+--> mise en place du store redux et des states √
+--> afficher les composante des propriété de la box √
+--> Mettre en place les inputs range lié à la boite √
+--> Mettre en place les inputs color lié à la boite √
+--> Afficher la liste des ombres √
+--> ajouter les inputs des ombres √
+--> gérer les inputs range des ombres √
+--> Ajouter les checkboxes 
+
+
+1.Créez un dossier Portfolio 
+2. créer un fichier index.html 
+3. inititialisez un dépôt git dans ce dossier 
+4. vérifiez le statut du dépôt avec la commande correspondante 
+5. ajooutez les changement dans la zone de transit 
+6. créez un commit avec la commande nécessaire, et ajoutez-y le message "mise en place du portfolio 
+7. regardez l'historique de vos commits avec la commande correspondante. 
+
+
+
