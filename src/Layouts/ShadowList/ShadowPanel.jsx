@@ -4,8 +4,12 @@ import "./animation.css";
 import ShadowColorPicker from "./ShadowColorPicker";
 import ShadowRange from "./ShadowRange";
 import ShadowCheckBox from "./ShadowCheckBox";
+import { removeShadow } from "../../features/shadow";
+import { useDispatch } from "react-redux";
 
 export default function ShadowPanel({ panelNumber, shadow }) {
+  const dispatch = useDispatch();
+
   // État local pour gérer l'état de l'ombre (ouverte ou fermée)
   const [toggleShadow, setToggleShadow] = useState(false);
 
@@ -65,7 +69,10 @@ export default function ShadowPanel({ panelNumber, shadow }) {
                 <ShadowCheckBox status="inset" shadowId={shadow.id} />
               </div>
 
-              <button className="ml-auto text-sm bg-red-600 text-white hover:bg-red-700 py-1 px-3 rounded">
+              <button
+                onClick={() => dispatch(removeShadow(shadow.id))}
+                className="ml-auto text-sm bg-red-600 text-white hover:bg-red-700 py-1 px-3 rounded"
+              >
                 Remove
               </button>
             </div>
