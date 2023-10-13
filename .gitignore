@@ -1,2 +1,2 @@
-# Ignorer le répertoire de fichiers de dépendances npm
+# Ignorer le node module 
 /node_modules
